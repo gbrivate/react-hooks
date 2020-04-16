@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 export const useTodo = () => {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState('');
   const [listTask, setListTask] = useState([]);
 
   useEffect(() => {
-    setTask("");
+    setTask('');
   }, [listTask]);
 
   const filterTask = type => {
